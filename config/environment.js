@@ -6,6 +6,18 @@ module.exports = function(environment) {
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
+
+    firebase: {
+      apiKey: firebaseApiKey,
+      authDomain: 'coding-forum.firebaseapp.com',
+      databaseURL: 'https://coding-forum.firebaseio.com/',
+      storageBucket: 'gs://coding-forum.appspot.com/'
+    },
+
+    torii: {
+      sessionServiceName: 'session'
+    },
+
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -15,12 +27,6 @@ module.exports = function(environment) {
         // Prevent Ember Data from overriding Date.parse.
         Date: false
       },
-      firebase: {
-        apiKey: firebaseApiKey,
-        authDomain: 'YOUR-FIREBASE-APP.firebaseapp.com',
-        databaseURL: 'https://YOUR-FIREBASE-APP.firebaseio.com',
-        storageBucket: 'YOUR-FIREBASE-APP.appspot.com'
-      }
     },
 
     APP: {
