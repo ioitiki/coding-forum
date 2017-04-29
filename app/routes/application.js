@@ -10,8 +10,17 @@ export default Ember.Route.extend({
     signIn: function(provider) {
       this.get('session').open('firebase', {
         provider: provider,
-      }).then(function(data) {
-        // console.log(data.currentUser);
+      }).then(data => {
+        var userID = data.currentUser.uid;
+        this.get('getUser').getUser(userID).catch(error => {
+          var params = {
+            name: data.currentUser.displayName,
+            userID: userID,
+            photoURL: data.currentUser.photoURL
+          };
+          var newUser = this.get('store').createRecord('user', params);
+          newUser.save();
+        });
       });
     },
 
