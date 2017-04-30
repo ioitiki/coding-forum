@@ -1,0 +1,10 @@
+{ "questions": [{
+    "author": "Veruca Salt",
+    "subject": "JavaScript question",
+    "body": "How do you properly implement promises when dealing with async functinos?"
+  }, {
+    "author": "Mike Teavee",
+    "subject": "CSS problem",
+    "body": "How do I make nested list?"
+  }]
+}

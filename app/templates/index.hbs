@@ -1,4 +1,10 @@
 <div class="col-md-8 col-md-offset-2">
   <h1 id="title" class="text-center">Coding Forum</h1>
 
+  <ul>
+    {{#each model as |question|}}
+      {{question-list question=question destroyQuestion="destroyQuestion"}}
+    {{/each}}
+  </ul>
+
 </div>
