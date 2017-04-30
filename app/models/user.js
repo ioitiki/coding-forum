@@ -5,6 +5,5 @@ export default DS.Model.extend({
   firstName: DS.attr(),
   lastName: DS.attr(),
   location: DS.attr(),
-  bio: DS.attr(),
-  website: DS.attr()
+  bio: DS.attr()
 });

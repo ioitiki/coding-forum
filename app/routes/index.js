@@ -1,17 +1,5 @@
 import Ember from 'ember';
 
-var questions = [{
-  id: 1,
-  author: "Veruca Salt",
-  subject: "JavaScript question",
-  body: "How do you properly implement promises when dealing with async functinos?",
-}, {
-  id: 2,
-  author: "Bob Jones",
-  subject: "CSS problem",
-  body: "How do I make nested list?",
-}];
-
 export default Ember.Route.extend( {
   model() {
       return this.store.findAll('question');
@@ -26,6 +14,11 @@ export default Ember.Route.extend( {
   },
 
   actions: {
+    saveQuestion(params) {
+      var newQuestion = this.store.createRecord('question', params);
+      newQuestion.save();
+      this.transitionTo('index');
+    },
     destroyQuestion(question) {
       question.destroyRecord();
       this.transitionTo('index');

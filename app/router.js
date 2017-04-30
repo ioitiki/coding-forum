@@ -10,11 +10,7 @@ Router.map(function() {
   this.route('login');
   this.route('signup');
   this.route('protected');
-  this.route('profile', { path: '/:user_id' });
-  this.route('questions', function() {
-    this.route('new');
-    this.route('question', { path: '/:id'});
-  });
+  this.route('question', {path: '/question/:question_id'});
 });
 
 export default Router;
