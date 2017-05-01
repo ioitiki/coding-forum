@@ -1,9 +1,13 @@
 <div class="col-md-8 col-md-offset-2">
   <h1 id="title" class="text-center">Coding Forum</h1>
 
+  <p class="text-center lead">
+    Click on a question to provide and answer or add a question by clicking 'New Question'
+  </p>
+
   <ul>
     {{#each model as |question|}}
-      {{question-list question=question update="update" destroyQuestion="destroyQuestion"}}
+      {{question-list question=question update="update"}}
     {{/each}}
   </ul>
 
