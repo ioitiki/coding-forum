@@ -1,7 +1,12 @@
-# coding-forum
+# _Coding Forum_
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+#### _Coding Forum is a basic discussion board allowing users to post questions and submit answers, 04-30-2017_
+
+#### By _**Andrew Malkin**_
+
+## Description
+_Coding Forum is a web-application built using the ember framework and emberfire via firebase allowing users to post questions and submit answers related to coding. All json objects are stored using firebase._
+
 
 ## Prerequisites
 
@@ -15,14 +20,14 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
+* _Clone the Coding Forum repository [here](https://github.com/ioitiki/coding-forum)_
 * `cd coding-forum`
 * `npm install`
 * `bower install`
 
 ## Running / Development
 
-* `ember serve`
+* `ember server`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
 
 ### Code Generators
