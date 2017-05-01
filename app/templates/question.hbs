@@ -1,1 +1,13 @@
-<h2>More information about {{model.author}}: {{model.subject}}</h2>
+<h3>Author: {{model.author}}</h3>
+<h3>Subject: {{model.subject}}</h3>
+<div class="well">
+  <h4>{{model.body}}</h4>
+</div>
+<h3>Answers:</h3>
+<ul>
+  {{#each question.answers as |answer|}}
+    {{answer-list answer=answer}}
+  {{/each}}
+</ul>
+
+{{answer-new saveAnswer="saveAnswer" question=model}}

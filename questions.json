@@ -6,5 +6,12 @@
     "author": "Mike Teavee",
     "subject": "CSS problem",
     "body": "How do I make nested list?"
-  }]
+  }],
+  "answers": [{
+   "author": "Andrea",
+   "body": "you do it like this."
+ }, {
+   "author": "Alex",
+   "body": "this is the answer you are looking for."
+ }]
 }
