@@ -8,7 +8,7 @@ module.exports = function(environment) {
     locationType: 'auto',
 
     firebase: {
-      apiKey: firebaseApiKey,
+      apiKey: 'AIzaSyAacrK9RkxJQb1wF0dGB0PCG7IVZt46AWs',
       authDomain: 'coding-forum.firebaseapp.com',
       databaseURL: 'https://coding-forum.firebaseio.com/',
       storageBucket: 'gs://coding-forum.appspot.com/'
