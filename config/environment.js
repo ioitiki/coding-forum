@@ -1,5 +1,3 @@
-var firebaseApiKey = require('../.env').firebaseApiKey
-
 module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'coding-forum',
